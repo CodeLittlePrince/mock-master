@@ -3,13 +3,16 @@
   "version": "0.0.1",
   "description": "mock server",
   "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "mock": "nodemon -q --inspect ./demo/mockServer/server.js",
     "prepare": "husky install",
     "demo": "webpack-dev-server --open --config ./demo/webpack.config",
     "commit": "git-cz",
     "lint": "eslint --ext .js ./",
-    "release": "np --yolo -skip-2fa"
+    "release": "np --yolo"
   },
   "repository": {
     "type": "git",
