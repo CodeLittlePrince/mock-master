@@ -12,7 +12,8 @@
     "demo": "webpack-dev-server --open --config ./demo/webpack.config",
     "commit": "git-cz",
     "lint": "eslint --ext .js ./",
-    "release": "np --yolo"
+    "release": "np --yolo",
+    "test": "jest test"
   },
   "repository": {
     "type": "git",
@@ -32,9 +33,11 @@
     "@commitlint/config-conventional": "^14.1.0",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.2.0",
+    "eslint-plugin-jest": "^25.2.4",
     "git-cz": "^4.8.0",
     "html-webpack-plugin": "^3.2.0",
     "husky": "^7.0.4",
+    "jest": "^27.3.1",
     "mockjs": "^1.1.0",
     "nodemon": "^2.0.14",
     "np": "^7.5.0",
