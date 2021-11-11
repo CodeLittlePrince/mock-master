@@ -113,4 +113,19 @@ describe('rule format validate', () => {
   
     expect(processMock(mockData, rule)).toBe(-1)
   })
+
+  test('case - 3', () => {
+    const mockData = {
+      '@good': {
+        status: 200
+      },
+      '@bad': {
+        status: 400
+      }
+    }
+  
+    const rule = '@good'
+  
+    expect(processMock(mockData, rule)).toBe(-2)
+  })
 })
