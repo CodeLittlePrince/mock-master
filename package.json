@@ -1,6 +1,6 @@
 {
   "name": "mock-master",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "mock server",
   "main": "lib/index.js",
   "files": [
