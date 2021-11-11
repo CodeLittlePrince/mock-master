@@ -7,7 +7,7 @@
     "lib"
   ],
   "scripts": {
-    "mock": "nodemon -q --inspect ./demo/mockServer/server.js",
+    "mock": "nodemon -q ./demo/mockServer/server.js",
     "prepare": "husky install",
     "demo": "webpack-dev-server --open --config ./demo/webpack.config",
     "commit": "git-cz",
