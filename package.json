@@ -7,7 +7,7 @@
     "lib"
   ],
   "scripts": {
-    "mock": "nodemon -q ./demo/mockServer/server.js",
+    "mock": "nodemon -q --inspect ./demo/mockServer/server.js",
     "prepare": "husky install",
     "demo": "webpack-dev-server --open --config ./demo/webpack.config",
     "commit": "git-cz",
@@ -28,6 +28,11 @@
     "url": "https://github.com/CodeLittlePrince/mock-master/issues"
   },
   "homepage": "https://github.com/CodeLittlePrince/mock-master#readme",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
   "devDependencies": {
     "@commitlint/cli": "^14.1.0",
     "@commitlint/config-conventional": "^14.1.0",
@@ -45,11 +50,6 @@
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.3"
   },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
-  },
   "dependencies": {
     "boom": "^7.3.0",
     "chalk": "^4.1.2",
@@ -57,6 +57,6 @@
     "koa-body": "^4.2.0",
     "koa-bodyparser": "^4.3.0",
     "koa-router": "^10.1.1",
-    "koa-send": "^5.0.1"
+    "ws": "^8.2.3"
   }
 }
