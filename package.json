@@ -11,7 +11,7 @@
     "prepare": "husky install",
     "demo": "webpack-dev-server --open --config ./demo/webpack.config",
     "commit": "git-cz",
-    "lint": "eslint --ext .js ./",
+    "lint": "lint-staged",
     "release": "np --yolo",
     "test": "jest test"
   },
@@ -43,6 +43,7 @@
     "html-webpack-plugin": "^3.2.0",
     "husky": "^7.0.4",
     "jest": "^27.3.1",
+    "lint-staged": "^12.1.3",
     "mockjs": "^1.1.0",
     "nodemon": "^2.0.14",
     "np": "^7.5.0",
