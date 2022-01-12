@@ -10,7 +10,7 @@ module.exports = {
     'plugin:jest/recommended'
   ],
   'parserOptions': {
-    'ecmaVersion': 8
+    'ecmaVersion': 'latest'
   },
   // https://eslint.org/docs/rules/
   'rules': {
